@@ -1,3 +1,5 @@
+
+
 /** FULL PAGE **/
 
 body {
@@ -332,32 +334,12 @@ a {
 
 /** ITEM1 IMAGE **/
 .item {
-    background-image: url("../img/Torch1.png");
+    background-image: var(--img1);
 }
 
 /** ITEM1 IMAGE 2 **/
 .item::after {
-    background-image: url("../img/Torch2.png");
-}
-
-/** ITEM2 IMAGE **/
-.item2 {
-    background-image: url("../img/Astronaut.png");
-}
-
-/** ITEM2 IMAGE 2 **/
-.item2::after {
-    background-image: url("../img/Astronaut2.png");
-}
-
-/** ITEM3 IMAGE **/
-.item3 {
-    background-image: url("../img/Hat1.png");
-}
-
-/** ITEM3 IMAGE 2 **/
-.item3::after {
-    background-image: url("../img/Hat2.png");
+    background-image: var(--img2);
 }
 
 /** ITEM NAMES AND PRICES FONT **/
@@ -386,7 +368,7 @@ a {
 }
 
 /** IMAGE CONTAINER FOR ITEMS **/
-.item3, .item2, .item {
+.item, .item_square {
     position: relative;
     width: 100%;
     height: 85%;
@@ -396,7 +378,7 @@ a {
 }
 
 /** IMAGE CONTAINER FOR ITEMS : AFTER **/
-.item3::after, .item2::after, .item::after {
+.item::after, .item_square::after {
     content: "";
     position: absolute;
     top: 0; left: 0;
@@ -409,7 +391,7 @@ a {
 }
 
 /** IMAGE CONTAINER FOR ITEMS WHEN HOVER & : AFTER **/
-.item3:hover::after, .item2:hover::after, .item:hover::after {
+.item:hover::after, .item_square:hover::after {
     opacity: 1;
 }
 
@@ -483,48 +465,12 @@ a {
     font-size: 15px;
 }
 
-#shirt1 {
-    background-image: url("../img/shirt1-1.webp");
-    height: 70%;
-}
-
-#shirt1::after {
-    background-image: url("../img/shirt1-2.webp");
-}
-
 .display_items2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin: 0 20px 0 20px;
     padding: 0;
-}
-
-#shirt2 {
-    background-image: url("../img/shirt2-1.webp");
-    height: 70%;
-}
-
-#shirt2::after {
-    background-image: url("../img/shirt2-2.webp");
-}
-
-#shirt3 {
-    background-image: url("../img/shirt3-1.webp");
-    height: 70%;
-}
-
-#shirt3::after {
-    background-image: url("../img/shirt3-2.webp");
-}
-
-#shirt4 {
-    background-image: url("../img/shirt4-1.webp");
-    height: 70%;
-}
-
-#shirt4::after {
-    background-image: url("../img/shirt4-2.webp");
 }
 
 .color {
@@ -552,46 +498,73 @@ a {
     text-align: center;
 }
 
-#menshirt1 {
-    background-image: url("../img/menshirt1-1.webp");
+.colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.footer {
+    margin: 10% 0 0 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_ul li {
+    display: inline-block;
+    color: white;
+    margin: 0 30px 0 30px;
+    padding: 0;
+    font-family: arial, roboto, sans-serif;
+    font-weight: 10;
+}
+
+.footer_ul {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.item_square {
     height: 70%;
+    background-image: var(--img1);
 }
 
-#menshirt1::after {
-    background-image: url("../img/menshirt1-2.webp");
+.item_square::after {
+    background-image: var(--img2);
 }
 
-#menshirt2 {
-    background-image: url("../img/menshirt2-1.webp");
-    height: 70%;
+.faq {
+    display: inline-block;
+    color: black;
+    margin: 0 20% 0 20%;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.65;
 }
 
-#menshirt2::after {
-    background-image: url("../img/menshirt2-2.webp");
+.faq h2, .faq p {
+    font-size: 14px;
+    margin: 0;
+    color: #5c5c5c;
 }
 
-#menshirt3 {
-    background-image: url("../img/menshirt3-1.webp");
-    height: 70%;
+.faq p {
+    margin-bottom: 20px;
 }
 
-#menshirt3::after {
-    background-image: url("../img/menshirt3-2.webp");
-}
-
-#menshirt4 {
-    background-image: url("../img/menshirt4-1.webp");
-    height: 70%;
-}
-
-#menshirt4::after {
-    background-image: url("../img/menshirt4-2.webp");
-}
-
-#maroon {
-    background-color: maroon;
-}
-
-#navy {
-    background-color: navy;
+.link a {
+    font-weight: bold;;
+    text-decoration-line: underline;
+    color: black;
 }

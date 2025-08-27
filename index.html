@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 <body>
 <header class="header">
@@ -16,6 +16,7 @@
                 <img src="assets/img/logo.png" class= "logo_img" alt="spacex_logo" >
             </div>
         </a>
+        <!-- NAVIGATION -->
         <nav class="navigation">
             <ul class="nav">
                 <li class="mens">MENS
@@ -23,8 +24,8 @@
                     <div class="mens_div"></div>
                     <ul class="mens_submenu">
                         <li><a href="men_shirts.html">Shirts</a></li>
-                        <li>Outerwear</li>
-                        <li>View more</li>
+                        <li><a href="outerwear.html">Outerwear</a></li>
+                        <li><a href="mens.html">View more</a></li>
                     </ul>
                 </div>
                 </li>
@@ -75,74 +76,94 @@
 </header>
 <div class="search_bar"><input type="search" class="search_tool" placeholder="SEARCH..."></div>
 <main>
+    <h1 class="text-3xl font-bold underline">
+        Hello world!
+    </h1>
 <img class="banner" src="assets/img/banner.png" alt="">
+    <!-- MAIN -->
     <div class="main_container">
         <p class="trending">TRENDING</p>
     </div>
-    <!-- ITEM CONTAINER MAIN -->
+    <!-- ITEM CONTAINER MAIN 1 -->
     <ul class="display_items2">
         <!-- CONTAINER 1 -->
         <li class="display_item1">
-            <a href="#"><div class="item"></div></a>
+            <div class="item" style="--img1: url('/assets/img/item1-1.webp'); --img2: url('/assets/img/item1-2.webp')"></div>
             <a href="#"><div class="item_name1">STARSHIP TORCH</div></a>
             <div class="item_price1">$175.00</div>
         </li>
         <!-- CONTAINER 2 -->
         <li class="display_item1">
-            <div class="item2"></div>
-            <div class="item_name1">SPACEX CREW DRAGON PLUSH</div>
-            <div class="item_price1">$50.00</div>
-        </li>
-        <!-- CONTAINER 3 -->
-        <li class="display_item1">
-            <div class="item3"></div>
-            <div class="item_name1">DRAGON ADJUSTABLE CAP</div>
+            <div class="item" style="--img1: url('/assets/img/item2-1.webp'); --img2: url('/assets/img/item2-2.webp')"></div>
+            <div class="item_name1">UNISEX STARSHIP FLIGHT 10 T-SHIRT</div>
             <div class="item_price1">$35.00</div>
         </li>
+        <!-- CONTAINER 3 -->
+        <li class="display_item1">
+            <div class="item" style="--img1: url('/assets/img/item3-1.webp');"></div>
+            <div class="item_name1">STARSHIP FLIGHT 10 MISSION PATCH</div>
+            <div class="item_price1">$15.00</div>
+        </li>
     </ul>
+    <!-- ITEM CONTAINER MAIN 2 -->
     <ul class="display_items2">
         <!-- CONTAINER 1 -->
         <li class="display_item1">
-            <a href="#"><div class="item"></div></a>
-            <a href="#"><div class="item_name1">STARSHIP TORCH</div></a>
-            <div class="item_price1">$175.00</div>
+            <a href="#"><div class="item" style="--img1: url('/assets/img/item4-1.webp'); --img2: url('/assets/img/item4-2.webp')"></div></a>
+            <a href="#"><div class="item_name1">STARSHIP CHOPSTICKS</div></a>
+            <div class="item_price1">$20.00</div>
         </li>
         <!-- CONTAINER 2 -->
         <li class="display_item1">
-            <div class="item2"></div>
-            <div class="item_name1">SPACEX CREW DRAGON PLUSH</div>
-            <div class="item_price1">$50.00</div>
+            <div class="item" style="--img1: url('/assets/img/item5-1.webp'); --img2: url('/assets/img/item5-2.webp')"></div>
+            <div class="item_name1">UNISEX SPACEX STARSHIP VINTAGE T-SHIRT</div>
+            <div class="item_price1">$40.00</div>
         </li>
         <!-- CONTAINER 3 -->
         <li class="display_item1">
-            <div class="item3"></div>
-            <div class="item_name1">DRAGON ADJUSTABLE CAP</div>
-            <div class="item_price1">$35.00</div>
+            <div class="item" style="--img1: url('/assets/img/item6-1.webp'); --img2: url('/assets/img/item6-2.webp')"></div>
+            <div class="item_name1">UNISEX SPACEX FALCON 9 VINTAGE T-SHIRT</div>
+            <div class="item_price1">$40.00</div>
         </li>
     </ul>
+    <!-- ITEM CONTAINER MAIN 3 -->
     <ul class="display_items2">
         <!-- CONTAINER 1 -->
         <li class="display_item1">
-            <a href="#"><div class="item"></div></a>
-            <a href="#"><div class="item_name1">STARSHIP TORCH</div></a>
-            <div class="item_price1">$175.00</div>
+            <a href="#"><div class="item" style="--img1: url('/assets/img/item7-1.webp'); --img2: url('/assets/img/item7-2.webp')"></div></a>
+            <a href="#"><div class="item_name1">UNISEX SPACEX DRAGON VINTAGE T-SHIRT</div></a>
+            <div class="item_price1">$40.00</div>
         </li>
         <!-- CONTAINER 2 -->
         <li class="display_item1">
-            <div class="item2"></div>
-            <div class="item_name1">SPACEX CREW DRAGON PLUSH</div>
-            <div class="item_price1">$50.00</div>
+            <div class="item" style="--img1: url('/assets/img/item8-1.webp'); --img2: url('/assets/img/item8-2.webp')"></div>
+            <div class="item_name1">UNISEX SPACEX FALCON HEAVY VINTAGE T-SHIRT</div>
+            <div class="item_price1">$40.00</div>
         </li>
         <!-- CONTAINER 3 -->
         <li class="display_item1">
-            <div class="item3"></div>
-            <div class="item_name1">DRAGON ADJUSTABLE CAP</div>
+            <div class="item" style="--img1: url('/assets/img/item9-1.webp'); --img2: url('/assets/img/item9-2.webp')"></div>
+            <div class="item_name1">STARSHIP ADJUSTABLE CAP</div>
             <div class="item_price1">$35.00</div>
         </li>
     </ul>
     <button class="login_btn" id="trending">VIEW ALL TRENDING</button>
+    <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+        <img class="size-12 shrink-0" src="/img/logo.svg" alt="ChitChat Logo" />
+        <div>
+            <div class="text-xl font-medium text-black dark:text-white">ChitChat</div>
+            <p class="text-gray-500 dark:text-gray-400">You have a new message!</p>
+        </div>
+    </div>
 </main>
-<footer class="footer"></footer>
+<footer class="footer">
+    <ul class="footer_ul">
+        <li class="footer1"><a href="faqs.html">FAQs</a></li>
+        <li class="footer2">Search</li>
+        <li class="footer3">Privacy Policy</li>
+        <li class="footer4">Terms & Conditions</li>
+    </ul>
+</footer>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

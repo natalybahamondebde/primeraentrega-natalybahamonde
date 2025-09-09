@@ -1,5 +1,4 @@
 /** FULL PAGE **/
-
 body {
     margin: 0;
     padding: 0;
@@ -7,19 +6,20 @@ body {
     animation: fadeIn 1s ease forwards;
 }
 
+/** ANIMATION FADEIN **/
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
 }
 
+/** LINKS **/
 a {
-    color: inherit;          /* o el color que quieras */
+    color: inherit;
     text-decoration: none;
 }
 
 /** HEADER CONTAINER **/
-
 .header {
     width: 100%;
     height: 80px;
@@ -29,7 +29,6 @@ a {
 }
 
 /** HEADER **/
-
 .inner_header {
     background-color: black;
     height: 84px;
@@ -42,7 +41,6 @@ a {
 }
 
 /** LOGO CONTAINER **/
-
 .logo_link {
     display: inline-block;
     height: 48px;
@@ -52,7 +50,6 @@ a {
 }
 
 /** LOGO IMAGE **/
-
 .logo_link .logo_img {
     height: 48px;
     width: auto;
@@ -61,13 +58,11 @@ a {
 }
 
 /** LOGO WHEN CLICKED **/
-
 .logo_link .logo_img:active {
     border: 2px solid white;
 }
 
 /** NAVIGATION CONTAINER **/
-
 .navigation {
     display: flex;
     width: 100%;
@@ -75,7 +70,6 @@ a {
 }
 
 /** NAVIGATION **/
-
 .nav {
     list-style: none;
     margin: 0;
@@ -88,7 +82,6 @@ a {
 }
 
 /** NAVIGATION ITEMS **/
-
 .nav li {
     display: inline-block;
     margin-right: 37px;
@@ -121,7 +114,6 @@ a {
     height: 170px;
     width: 200px;
     transition: opacity 0.3s ease-in-out;
-    transition-delay: 2s;
 }
 
 .accs_sub, .fl_sub {
@@ -154,16 +146,6 @@ a {
     height: 1px;
     background-color: transparent;
     transition: 0.3s ease-in-out;
-    transition-delay: 2s;
-}
-
-.mens:hover .mens_div,
-.women:hover .women_div,
-.kids:hover .kids_div,
-.accs:hover .accs_div,
-.fl:hover .fl_div{
-    width: 100%;
-    height: 2px;
 }
 
 /** WHEN HOVERED **/
@@ -185,6 +167,8 @@ a {
     opacity: 1;
     background-color: white;
     transition-delay: 0s;
+    width: 100%;
+    height: 2px;
 }
 
 .mens_submenu,
@@ -209,6 +193,15 @@ a {
     margin-left: 13%;
     font-family: "Arial Narrow", Arial, sans-serif;
     font-weight: normal;
+    transition: 0.3s ease-in-out;
+}
+
+.mens_submenu li:hover,
+.women_submenu li:hover,
+.kids_submenu li:hover,
+.accs_submenu li:hover,
+.fl_submenu li:hover{
+    color: grey;
 }
 
 /** NAVIGATION FOR USER ----------------------------------------------------------**/
@@ -227,7 +220,6 @@ a {
 }
 
 /** NAVIGATION FOR USER WHEN HOVERED **/
-
 .user .search:hover,
 .user .account:hover{
     color: white;
@@ -235,47 +227,18 @@ a {
 }
 
 /** NAVIGATION FOR USER ITEMS TRANSITION **/
-
 .user li {
     display: inline-block;
     transition: 0.3s ease-in-out;
 }
 
 /** CART **/
-
 .user .cart {
     color: white;
     font-size: 15px;
 }
 
-.search_bar { /** FIX **/
-    width: 100%;
-    height: 80px;
-    background-color: beige;
-    display: none;
-    position: fixed;
-}
-
-.search_tool {  /** FIX **/
-    width: 100%;
-    border: none;
-    padding-left: 5%;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    color: black;
-    letter-spacing: 1.5px;
-    font-size: 19px;
-    display: none;
-    position: fixed;
-}
-
-.search:hover .search_bar,
-.search:hover .search_tool { /** FIX **/
-    display: flex;
-}
-
 /** BANNER **/
-
 .banner {
     height: auto;
     width: 100%;
@@ -285,6 +248,7 @@ a {
     animation: zoomIn 2s ease forwards;
 }
 
+/** ANIMATION ZOOM **/
 @keyframes zoomIn {
     to {
         opacity: 1;
@@ -293,7 +257,6 @@ a {
 }
 
 /** TRENDING TEXT **/
-
 .trending {
     font-size: 25px;
     font-family: Arial, sans-serif;
@@ -304,13 +267,11 @@ a {
 }
 
 /** MAIN CONTAINER **/
-
 .main_container {
     margin-top: 80px;
 }
 
 /** ITEM NAMES **/
-
 .item_name1 {
     display: inline-block;
     font-family: Arial, sans-serif;
@@ -330,12 +291,12 @@ a {
     padding: 0;
 }
 
-/** ITEM1 IMAGE **/
+/** ITEM IMAGE **/
 .item {
     background-image: var(--img1);
 }
 
-/** ITEM1 IMAGE 2 **/
+/** ITEM IMAGE 2 **/
 .item::after {
     background-image: var(--img2);
 }
@@ -422,6 +383,10 @@ a {
     height: 6%;
     margin: 0;
     padding: 0;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    border: 1px black solid;
 }
 
 .login_container h1, .login_btn{
@@ -437,13 +402,6 @@ a {
     font-family: "Roboto", sans-serif;
     font-weight: lighter;
     letter-spacing: 0.5px;
-}
-
-.login_btn {
-    font-size: 13px;
-    font-weight: bold;
-    transition: 0.5s ease-in-out;
-    border: 1px black solid;
 }
 
 .login_btn:hover {
@@ -471,6 +429,7 @@ a {
     padding: 0;
 }
 
+/** COLORS FOR ITEMS **/
 .color {
     display: flex;
     background-color: black;
@@ -483,6 +442,7 @@ a {
     margin-top: 15px;
 }
 
+/** COLORS FOR ITEMS WHEN HOVERED **/
 .color:hover {
     box-shadow: 0 0 0 3px white, 0 0 0 4px grey;
     cursor: pointer;
@@ -496,6 +456,7 @@ a {
     text-align: center;
 }
 
+/** CONTAINER FOR COLORS **/
 .colors {
     display: flex;
     justify-content: center;
@@ -513,6 +474,7 @@ a {
     align-items: center;
 }
 
+/** FOOTER ITEMS **/
 .footer_ul li {
     display: inline-block;
     color: white;
@@ -520,6 +482,11 @@ a {
     padding: 0;
     font-family: arial, roboto, sans-serif;
     font-weight: 10;
+    transition: 0.3s ease-in-out;
+}
+
+.footer_ul li:hover {
+    color: grey;
 }
 
 .footer_ul {
@@ -530,6 +497,7 @@ a {
     padding: 0;
 }
 
+/** SQUARE CONTAINER FOR ITEMS **/
 .item_square {
     height: 70%;
     background-image: var(--img1);

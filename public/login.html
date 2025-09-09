@@ -16,6 +16,7 @@
                 <img src="assets/img/logo.png" class= "logo_img" alt="spacex_logo" >
             </div>
         </a>
+        <!-- NAVIGATION -->
         <nav class="navigation">
             <ul class="nav">
                 <li class="mens">MENS
@@ -32,7 +33,7 @@
                     <div class="women_sub">
                         <div class="women_div"></div>
                         <ul class="women_submenu">
-                            <li>Shirts</li>
+                            <li><a href="women_shirts.html">Shirts</a></li>
                             <li>Outerwear</li>
                             <li>View more</li>
                         </ul>
@@ -52,15 +53,22 @@
                     <div class="accs_sub">
                         <div class="accs_div"></div>
                         <ul class="accs_submenu">
-                            <li>View All</li>
+                            <li><a href="accesories.html">View All</a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="shirts">FLIGHT SHIRTS</li>
+                <li class="fl">FLIGHT SHIRTS
+                    <div class="fl_sub">
+                        <div class="fl_div"></div>
+                        <ul class="fl_submenu">
+                            <li><a href="flight_shirts.html">View All</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
             <ul class="user">
-                <li class="account">ACCOUNT</li>
-                <li class="search">SEARCH</li>
+                <li class="account"><a href="login.html">ACCOUNT</a></li>
+                <li class="search" onclick="new f().showSearch()">SEARCH</li>
                 <li class="cart">CART</li>
             </ul>
         </nav>
@@ -76,7 +84,14 @@
         <p class="create_acc">Don't have an account? <a href="#">Create one</a></p>
     </div>
 </main>
-<footer class="footer"></footer>
+<footer class="footer">
+    <ul class="footer_ul">
+        <li class="footer1"><a href="/public/faqs.html">FAQs</a></li>
+        <li class="footer2"><a href="/public/Search.html">Search</a></li>
+        <li class="footer3">Privacy Policy</li>
+        <li class="footer4"><a href="/public/TOS.html">Terms & Conditions</a></li>
+    </ul>
+</footer>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

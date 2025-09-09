@@ -16,6 +16,7 @@
         <img src="assets/img/logo.png" class= "logo_img" alt="spacex_logo" >
       </div>
     </a>
+    <!-- NAVIGATION -->
     <nav class="navigation">
       <ul class="nav">
         <li class="mens">MENS
@@ -32,7 +33,7 @@
           <div class="women_sub">
             <div class="women_div"></div>
             <ul class="women_submenu">
-              <li>Shirts</li>
+              <li><a href="women_shirts.html">Shirts</a></li>
               <li>Outerwear</li>
               <li>View more</li>
             </ul>
@@ -52,7 +53,7 @@
           <div class="accs_sub">
             <div class="accs_div"></div>
             <ul class="accs_submenu">
-              <li>View All</li>
+              <li><a href="accesories.html">View All</a></li>
             </ul>
           </div>
         </li>
@@ -67,42 +68,41 @@
       </ul>
       <ul class="user">
         <li class="account"><a href="login.html">ACCOUNT</a></li>
-        <li class="search">SEARCH</li>
+        <li class="search" onclick="new f().showSearch()">SEARCH</li>
         <li class="cart">CART</li>
       </ul>
     </nav>
   </div>
 </header>
-<div class="search_bar"><input type="search" class="search_tool" placeholder="SEARCH..."></div>
 <main>
   <div class="main_container">
-    <p class="trending">MEN'S OUTERWEAR</p>
+    <p class="trending">MENS</p>
   </div>
   <!-- ITEM CONTAINER MAIN -->
   <ul class="display_items2">
     <!-- CONTAINER 1 -->
     <li class="display_item1">
-      <a href="#"><div class="item" id="menouter1"></div></a>
+      <a href="#"><div class="item_square" style="--img1: url('/assets/img/menshirt1-1.webp'); --img2: url('/assets/img/menshirt1-2.webp')"></div></a>
       <a href="#"><div class="item_name1">MEN'S F9 T-SHIRT</div></a>
       <div class="item_price1">$35.00</div>
       <div class="color" title="Maroon" style="background-color:maroon;"></div>
     </li>
     <!-- CONTAINER 2 -->
     <li class="display_item1">
-      <div class="item" id="menouter2"></div>
+      <div class="item_square" style="--img1: url('/assets/img/menshirt2-1.webp'); --img2: url('/assets/img/menshirt2-2.webp')"></div>
       <div class="item_name1">MEN'S DRAGON T-SHIRT</div>
       <div class="item_price1">$35.00</div>
       <div class="color" title="Navy" style="background-color:navy;"></div>
     </li>
     <!-- CONTAINER 3 -->
     <li class="display_item1">
-      <div class="item" id="menshirt3"></div>
+      <div class="item_square" style="--img1: url('/assets/img/menshirt3-1.webp'); --img2: url('/assets/img/menshirt3-2.webp')"></div>
       <div class="item_name1">MEN'S SPACEX T-SHIRT</div>
       <div class="item_price1">$35.00</div>
       <div class="color" title="Black"></div>
     </li>
     <li class="display_item1">
-      <div class="item" id="menshirt4"></div>
+      <div class="item_square" style="--img1: url('/assets/img/menshirt4-1.webp'); --img2: url('/assets/img/menshirt4-2.webp')"></div>
       <div class="item_name1">MEN'S FALCON HEAVY T-SHIRT</div>
       <div class="item_price1">$35.00</div>
       <div class="color" title="Maroon" style="background-color:maroon;"></div>
@@ -111,14 +111,14 @@
   <ul class="display_items2">
     <!-- CONTAINER 1 -->
     <li class="display_item1">
-      <div class="item" id="menshirt5"></div>
+      <div class="item_square" style="--img1: url('/assets/img/menshirt5-1.webp'); --img2: url('/assets/img/menshirt5-2.webp')"></div>
       <div class="item_name1">UNISEX STARSHIP FLIGHT 8 T-SHIRT</div>
       <div class="item_price1">$35.00</div>
       <div class="color"></div>
     </li>
     <!-- CONTAINER 2 -->
     <li class="display_item1">
-      <div class="item" id="menshirt6"></div>
+      <div class="item_square" style="--img1: url('/assets/img/menshirt6-1.webp'); --img2: url('/assets/img/menshirt6-2.webp')"></div>
       <div class="item_name1">UNISEX STARSHIP FLIGHT 8 T-SHIRT</div>
       <div class="item_price1">$35.00</div>
       <div class="colors">
@@ -129,13 +129,13 @@
     </li>
     <!-- CONTAINER 3 -->
     <li class="display_item1">
-      <div class="item" id="menshirt7"></div>
+      <div class="item_square" style="--img1: url('/assets/img/menshirt7-1.webp'); --img2: url('/assets/img/menshirt7-2.webp')"></div>
       <div class="item_name1">UNISEX STARSHIP FLIGHT 7 T-SHIRT</div>
       <div class="item_price1">$35.00</div>
       <div class="color"></div>
     </li>
     <li class="display_item1">
-      <div class="item" id="menshirt8"></div>
+      <div class="item_square" style="--img1: url('/assets/img/menshirt8-1.webp'); --img2: url('/assets/img/menshirt8-2.webp')"></div>
       <div class="item_name1">UNISEX STARSHIP FLIGHT 6 T-SHIRT</div>
       <div class="item_price1">$35.00</div>
       <div class="color"></div>
@@ -144,7 +144,7 @@
   <ul class="display_items2">
     <!-- CONTAINER 1 -->
     <li class="display_item1">
-      <a href="#"><div class="item" id="shirt1"></div></a>
+      <a href="#"><div class="item_square" id="shirt1"></div></a>
       <a href="#"><div class="item_name1">UNISEX STARSHIP FLIGHT 9 T-SHIRT</div></a>
       <div class="item_price1">$35.00</div>
       <div class="color" title="Black"></div>

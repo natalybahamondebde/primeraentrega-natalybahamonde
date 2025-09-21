@@ -2,158 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official SpaceX Store</title>
     <link href="assets/css/output.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-white font-sans">
 <!-- HEADER -->
-<header class="header">
-    <div class="inner_header">
+<header class="h-[84px]">
+    <div class="fixed top-0 left-0 z-20 w-full bg-black text-white flex items-center h-[84px] px-8">
         <!-- LOGO -->
-        <a href="index.html" class="logo_link">
-            <div class="logo">
-                <img src="assets/img/logo.png" class= "logo_img" alt="spacex_logo" >
-            </div>
+        <a href="index.html" class="flex-shrink-0 mr-8">
+            <img src="assets/img/logo.png" alt="spacex_logo" class="h-12 w-auto border-2 border-transparent active:border-white">
         </a>
         <!-- NAVIGATION -->
-        <nav class="navigation">
-            <ul class="nav">
-                <li class="mens">MENS
-                <div class="mens_sub">
-                    <div class="mens_div"></div>
-                    <ul class="mens_submenu">
-                        <li><a href="men_shirts.html">Shirts</a></li>
-                        <li><a href="outerwear.html">Outerwear</a></li>
-                        <li><a href="mens.html">View more</a></li>
-                    </ul>
-                </div>
-                </li>
-                <li class="women">WOMENS
-                <div class="women_sub">
-                    <div class="women_div"></div>
-                    <ul class="women_submenu">
-                        <li><a href="women_shirts.html">Shirts</a></li>
-                        <li>Outerwear</li>
-                        <li>View more</li>
-                    </ul>
-                </div>
-                </li>
-                <li class="kids">KIDS
-                <div class="kids_sub">
-                    <div class="kids_div"></div>
-                    <ul class="kids_submenu">
-                        <li>Shirts</li>
-                        <li>Outerwear</li>
-                        <li>View more</li>
-                    </ul>
-                </div>
-                </li>
-                <li class="accs">ACCESSORIES
-                    <div class="accs_sub">
-                        <div class="accs_div"></div>
-                        <ul class="accs_submenu">
-                            <li><a href="accesories.html">View All</a></li>
+        <nav class="w-full flex justify-between items-center">
+            <ul class="flex items-center gap-9 text-sm font-bold tracking-[1.5px]">
+                <li class="nav-item group">
+                    <span>MENS</span>
+                    <div class="nav-dropdown">
+                        <div class="nav-dropdown-line"></div>
+                        <ul class="font-normal">
+                            <li class="nav-dropdown-item"><a href="collections/mens-shirts.html">Shirts</a></li>
+                            <li class="nav-dropdown-item"><a href="collections/outerwear.html">Outerwear</a></li>
+                            <li class="nav-dropdown-item"><a href="collections/mens.html">View more</a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="fl">FLIGHT SHIRTS
-                    <div class="fl_sub">
-                        <div class="fl_div"></div>
-                        <ul class="fl_submenu">
-                            <li><a href="flight_shirts.html">View All</a></li>
+                <li class="nav-item group">
+                    <span>WOMENS</span>
+                    <div class="nav-dropdown">
+                        <div class="nav-dropdown-line"></div>
+                        <ul class="font-normal">
+                            <li class="nav-dropdown-item"><a href="collections/womens-shirts.html">Shirts</a></li>
+                            <li class="nav-dropdown-item"><a href="collections/women-outerwear.html">Outerwear</a></li>
+                            <li class="nav-dropdown-item"><a href="collections/womens.html">View more</a></li>
                         </ul>
                     </div>
                 </li>
-            </ul>
-            <ul class="user">
-                <li class="account"><a href="login.html">ACCOUNT</a></li>
-                <li class="search"><a href="Search.html">SEARCH</a></li>
-                <li class="cart">CART</li>
+                <li class="nav-item group">
+                    <span>KIDS</span>
+                    <div class="nav-dropdown">
+                        <div class="nav-dropdown-line"></div>
+                        <ul class="font-normal">
+                            <li class="nav-dropdown-item"><a href="collections/kids-t-shirts.html">Shirts</a></li>
+                            <li class="nav-dropdown-item"><a href="collections/kids-outerwear.html">Outerwear</a></li>
+                            <li class="nav-dropdown-item"><a href="collections/kid.html">View more</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item group">
+                    <span>ACCESSORIES</span>
+                    <div class="nav-dropdown">
+                        <div class="nav-dropdown-line"></div>
+                        <ul class="font-normal">
+                            <li class="nav-dropdown-item"><a href="collections/accesories.html">View All</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item group">
+                    <span>FLIGHT SHIRTS</span>
+                    <div class="nav-dropdown">
+                        <div class="nav-dropdown-line"></div>
+                        <ul class="font-normal">
+                            <li class="nav-dropdown-item"><a href="collections/flight_shirts.html">View All</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </nav>
     </div>
 </header>
-<!-- SEARCH BAR -->
+
 <main>
-<img class="banner" src="assets/img/banner.png" alt="">
-    <!-- MAIN -->
-    <div class="main_container">
-        <p class="trending">TRENDING</p>
+    <img class="w-full h-auto banner-animation" src="assets/img/banner.png" alt="Main Banner">
+
+    <div class="mt-20 mb-16">
+        <p class="section-title">TRENDING</p>
     </div>
-    <!-- ITEM CONTAINER MAIN 1 -->
-    <ul class="display_items2">
-        <!-- CONTAINER 1 -->
-        <li class="display_item1">
-            <div class="item" style="--img1: url('/public/assets/img/item1-1.webp'); --img2: url('/public/assets/img/item1-2.webp')"></div>
-            <a href="#"><div class="item_name1">STARSHIP TORCH</div></a>
-            <div class="item_price1">$175.00</div>
-        </li>
-        <!-- CONTAINER 2 -->
-        <li class="display_item1">
-            <div class="item" style="--img1: url('/public/assets/img/item2-1.webp'); --img2: url('/public/assets/img/item2-2.webp')"></div>
-            <div class="item_name1">UNISEX STARSHIP FLIGHT 10 T-SHIRT</div>
-            <div class="item_price1">$35.00</div>
-        </li>
-        <!-- CONTAINER 3 -->
-        <li class="display_item1">
-            <div class="item" style="--img1: url('/public/assets/img/item3-1.webp');"></div>
-            <div class="item_name1">STARSHIP FLIGHT 10 MISSION PATCH</div>
-            <div class="item_price1">$15.00</div>
-        </li>
-    </ul>
-    <!-- ITEM CONTAINER MAIN 2 -->
-    <ul class="display_items2">
-        <!-- CONTAINER 1 -->
-        <li class="display_item1">
-            <a href="#"><div class="item" style="--img1: url('/public/assets/img/item4-1.webp'); --img2: url('/public/assets/img/item4-2.webp')"></div></a>
-            <a href="#"><div class="item_name1">STARSHIP CHOPSTICKS</div></a>
-            <div class="item_price1">$20.00</div>
-        </li>
-        <!-- CONTAINER 2 -->
-        <li class="display_item1">
-            <div class="item" style="--img1: url('/public/assets/img/item5-1.webp'); --img2: url('/public/assets/img/item5-2.webp')"></div>
-            <div class="item_name1">UNISEX SPACEX STARSHIP VINTAGE T-SHIRT</div>
-            <div class="item_price1">$40.00</div>
-        </li>
-        <!-- CONTAINER 3 -->
-        <li class="display_item1">
-            <div class="item" style="--img1: url('/public/assets/img/item6-1.webp'); --img2: url('/public/assets/img/item6-2.webp')"></div>
-            <div class="item_name1">UNISEX SPACEX FALCON 9 VINTAGE T-SHIRT</div>
-            <div class="item_price1">$40.00</div>
-        </li>
-    </ul>
-    <!-- ITEM CONTAINER MAIN 3 -->
-    <ul class="display_items2">
-        <!-- CONTAINER 1 -->
-        <li class="display_item1">
-            <a href="#"><div class="item" style="--img1: url('/public/assets/img/item7-1.webp'); --img2: url('/public/assets/img/item7-2.webp')"></div></a>
-            <a href="#"><div class="item_name1">UNISEX SPACEX DRAGON VINTAGE T-SHIRT</div></a>
-            <div class="item_price1">$40.00</div>
-        </li>
-        <!-- CONTAINER 2 -->
-        <li class="display_item1">
-            <div class="item" style="--img1: url('/public/assets/img/item8-1.webp'); --img2: url('/public/assets/img/item8-2.webp')"></div>
-            <div class="item_name1">UNISEX SPACEX FALCON HEAVY VINTAGE T-SHIRT</div>
-            <div class="item_price1">$40.00</div>
-        </li>
-        <!-- CONTAINER 3 -->
-        <li class="display_item1">
-            <div class="item" style="--img1: url('/public/assets/img/item9-1.webp'); --img2: url('/public/assets/img/item9-2.webp')"></div>
-            <div class="item_name1">STARSHIP ADJUSTABLE CAP</div>
-            <div class="item_price1">$35.00</div>
-        </li>
-    </ul>
+
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-5">
+
+        <!-- PRODUCTO 1 -->
+        <div class="product-card">
+            <a href="#">
+                <div class="product-image-hover"
+                     style="--img1: url('/public/assets/img/item1-1.webp'); --img2: url('/public/assets/img/item1-2.webp')"></div>
+            </a>
+            <a href="#" class="product-title">STARSHIP TORCH</a>
+            <div class="product-price">$175.00</div>
+        </div>
+        <!-- PRODUCTO 2 -->
+        <div class="product-card">
+            <a href="#">
+                <div class="product-image-hover"
+                     style="--img1: url('/public/assets/img/item2-1.webp'); --img2: url('/public/assets/img/item2-2.webp')"></div>
+            </a>
+            <p class="product-title">UNISEX STARSHIP FLIGHT 10 T-SHIRT</p>
+            <div class="product-price">$35.00</div>
+        </div>
+        <!-- PRODUCTO 3 -->
+        <div class="product-card">
+            <a href="#">
+                <div class="product-image-hover"
+                     style="--img1: url('/public/assets/img/item3-1.webp'); --img2: url('/public/assets/img/item3-1.webp')"></div>
+            </a>
+            <p class="product-title">STARSHIP FLIGHT 10 MISSION PATCH</p>
+            <div class="product-price">$15.00</div>
+        </div>
+        <!-- PRODUCTO 4 -->
+        <div class="product-card">
+            <a href="#">
+                <div class="product-image-hover"
+                     style="--img1: url('/public/assets/img/item4-1.webp'); --img2: url('/public/assets/img/item4-2.webp')"></div>
+            </a>
+            <a href="#" class="product-title">STARSHIP CHOPSTICKS</a>
+            <div class="product-price">$20.00</div>
+        </div>
+        <!-- PRODUCTO 5 -->
+        <div class="product-card">
+            <a href="#">
+                <div class="product-image-hover"
+                     style="--img1: url('/public/assets/img/item5-1.webp'); --img2: url('/public/assets/img/item5-2.webp')"></div>
+            </a>
+            <p class="product-title">UNISEX SPACEX STARSHIP VINTAGE T-SHIRT</p>
+            <div class="product-price">$40.00</div>
+        </div>
+        <!-- PRODUCTO 6 -->
+        <div class="product-card">
+            <a href="#">
+                <div class="product-image-hover"
+                     style="--img1: url('/public/assets/img/item6-1.webp'); --img2: url('/public/assets/img/item6-2.webp')"></div>
+            </a>
+            <p class="product-title">UNISEX SPACEX FALCON 9 VINTAGE T-SHIRT</p>
+            <div class="product-price">$40.00</div>
+        </div>
+        <!-- PRODUCTO 7 -->
+        <div class="product-card">
+            <a href="#">
+                <div class="product-image-hover"
+                     style="--img1: url('/public/assets/img/item7-1.webp'); --img2: url('/public/assets/img/item7-2.webp')"></div>
+            </a>
+            <a href="#" class="product-title">UNISEX SPACEX DRAGON VINTAGE T-SHIRT</a>
+            <div class="product-price">$40.00</div>
+        </div>
+        <!-- PRODUCTO 8 -->
+        <div class="product-card">
+            <a href="#">
+                <div class="product-image-hover"
+                     style="--img1: url('/public/assets/img/item8-1.webp'); --img2: url('/public/assets/img/item8-2.webp')"></div>
+            </a>
+            <p class="product-title">UNISEX SPACEX FALCON HEAVY VINTAGE T-SHIRT</p>
+            <div class="product-price">$40.00</div>
+        </div>
+        <!-- PRODUCTO 9 -->
+        <div class="product-card">
+            <a href="#">
+                <div class="product-image-hover"
+                     style="--img1: url('/public/assets/img/item9-1.webp'); --img2: url('/public/assets/img/item9-2.webp')"></div>
+            </a>
+            <p class="product-title">STARSHIP ADJUSTABLE CAP</p>
+            <div class="product-price">$35.00</div>
+        </div>
+
+    </div>
 </main>
-<!-- FOOTER -->
-<footer class="footer">
-    <ul class="footer_ul">
-        <li class="footer1"><a href="/public/faqs.html">FAQs</a></li>
-        <li class="footer2"><a href="/public/Search.html">Search</a></li>
-        <li class="footer3">Privacy Policy</li>
-        <li class="footer4"><a href="/public/TOS.html">Terms & Conditions</a></li>
-    </ul>
+
+<footer class="w-full bg-black mt-24 pb-8">
+    <div class="container mx-auto h-[300px] flex justify-center items-center">
+        <ul class="flex flex-col md:flex-row gap-8 md:gap-6 text-white text-sm">
+            <li><a href="policies/faqs.html" class="footer-link">FAQs</a></li>
+            <li><a href="policies/privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+            <li><a href="policies/TOS.html" class="footer-link">Terms & Conditions</a></li>
+        </ul>
+    </div>
+    <a href="index.html" class="text-gray-400 font-bold text-[12px] tracking-[2px] mx-20">© SPACEX STORE</a>
 </footer>
 <script src="assets/js/script.js"></script>
 </body>

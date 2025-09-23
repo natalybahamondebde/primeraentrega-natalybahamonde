@@ -1,9 +1,8 @@
 @import "tailwindcss";
-/* Importa las directivas base de Tailwind */
 @tailwind utilities;
 
 @layer components {
-    /* Componente: Título de Sección */
+    /* Titulo de sección */
     .section-title {
         @apply text-xl sm:text-2xl md:text-3xl font-bold tracking-[1.5px] text-center;
     }
@@ -41,14 +40,17 @@
         @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 mx-3 sm:mx-5;
     }
 
+    /* Nombre de producto */
     .product-title {
         @apply mt-2 sm:mt-4 inline-block text-xs sm:text-sm md:text-base font-bold tracking-[1.5px];
     }
 
+    /* Precio de producto */
     .product-price {
         @apply mt-1 sm:mt-2 text-xs sm:text-sm md:text-base font-bold tracking-[1.5px];
     }
 
+    /* Color de producto */
     .color-dot {
         @apply flex mx-auto mt-2 sm:mt-4 rounded-full h-3 w-3 sm:h-4 sm:w-4 shadow-[0_0_0_2px_white] sm:shadow-[0_0_0_3px_white] cursor-pointer
         hover:shadow-[0_0_0_3px_white,0_0_0_4px_theme(colors.black.400)];
@@ -59,12 +61,13 @@
         @apply hover:text-gray-400 transition-colors;
     }
 
-    /* Links inside .link */
+    /* Links */
     .link a {
         @apply font-bold underline text-black;
     }
 }
 
+/* Animación de página */
 @layer base {
     body {
         opacity: 0;
@@ -72,6 +75,7 @@
     }
 }
 
+/* Transiciones */
 @keyframes fadeIn {
     to { opacity: 1; }
 }
@@ -80,12 +84,14 @@
     to { opacity: 1; transform: scale(1); }
 }
 
+/* Animación Banner */
 .banner-animation {
     opacity: 0;
     transform: scale(1.2);
     animation: zoomIn 2s ease forwards;
 }
 
+/* Tamaño imágenes cuadradas */
 .product-image-hover {
     @apply relative w-full overflow-hidden bg-center bg-cover cursor-pointer;
     aspect-ratio: 1 / 1;

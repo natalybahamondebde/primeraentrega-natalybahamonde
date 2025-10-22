@@ -95,11 +95,9 @@
 .product-image-hover {
     @apply relative w-full overflow-hidden bg-center bg-cover cursor-pointer;
     aspect-ratio: 1 / 1;
-    background-image: var(--img1);
-    transition: background-image 0.3s ease;
 }
 
-.product-image-hover::after {
+/* .product-image-hover::after {
     content: "";
     @apply absolute inset-0 bg-cover bg-center opacity-0 transition-opacity duration-300;
     background-image: var(--img2);
@@ -107,4 +105,4 @@
 
 .product-image-hover:hover::after {
     @apply opacity-100;
-}
+} */
